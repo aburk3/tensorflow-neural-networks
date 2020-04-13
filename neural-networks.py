@@ -66,3 +66,5 @@ model.fit(train_images, train_labels, epochs=1)
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=1)
 
 print('Test accuracy:', test_acc)
+
+predictions = model.predict(test_images)
